@@ -20,7 +20,7 @@
     if @huxElements.length
       for huxElement in @huxElements
         huxElement = $(huxElement)
-        unless huxElement.attr 'hux-disabled'
+        unless huxElement.is '[hux-disabled]'
           flag = huxElement.data 'hux-flag'
           id = 'hux-' + Math.floor(Math.random() * (25))
           content = huxElement.data 'hux-content'
