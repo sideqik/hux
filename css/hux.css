@@ -1,14 +1,19 @@
 /* Hux Plugin SCSS */
+.hux-element {
+  position: relative; }
+
 .hux-hotspot {
+  display: block;
   height: 46px;
-  width: 46px;
   left: 50%;
   overflow: hidden;
+  padding: 0 !important;
   position: absolute;
   -webkit-transform: translate(-50%, 0%);
       -ms-transform: translate(-50%, 0%);
           transform: translate(-50%, 0%);
   top: 0;
+  width: 46px;
   z-index: 999; }
   .hux-hotspot .hux-trigger {
     cursor: pointer;
@@ -76,6 +81,7 @@
   .hux-hotspot.open {
     height: auto;
     max-width: 320px;
+    min-width: 270px;
     width: auto; }
     .hux-hotspot.open .hux-trigger .hux-dot {
       background: #fff;

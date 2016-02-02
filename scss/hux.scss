@@ -1,12 +1,18 @@
 /* Hux Plugin SCSS */
+.hux-element {
+  position: relative;
+}
+
 .hux-hotspot {
+  display: block;
   height: 46px;
-  width: 46px;
   left: 50%;
   overflow: hidden;
+  padding: 0 !important;
   position: absolute;
   transform: translate(-50%, 0%);
   top: 0;
+  width: 46px;
   z-index: 999;
 
   .hux-trigger {
@@ -87,6 +93,7 @@
   &.open {
     height: auto;
     max-width: 320px;
+    min-width: 270px;
     width: auto;
 
     .hux-trigger {
